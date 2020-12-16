@@ -1,7 +1,6 @@
 # React JS
 
 ## Starter Guide
----
 1. create app
     
     ```npx create-react-app project-name --use-npm```
@@ -70,7 +69,6 @@
         setupTests.js
 
 ## Component
----
 1. Control Component
     > The controlled component is a way that you can handle the form input value using the state and to change the input value there is only one way to change it is using setState or useState
 2. Uncontrol Component

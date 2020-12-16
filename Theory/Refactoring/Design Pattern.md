@@ -1,7 +1,6 @@
 # Design Pattern
 
 ## Behavioural
----
 > Design pattern that are specifically concerned with communication between object.
 
 1. CHAIN OF RESPONSIBILITY
@@ -45,7 +44,6 @@
     Defines a new operation to a class without change
 
 ## Creational
----
 1. Factory Method
     > provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
 2. Singleton
@@ -59,6 +57,5 @@
 
 
 ## Structural
----
 1. Facade
     > is a structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes. It hides much of the complexity and makes the subsystem easy to use.

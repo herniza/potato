@@ -2,7 +2,6 @@
 > Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents
 
 ## Usage
----
 * file using .md
 * For Italic: *Italic* atau _Italic_
 * For Bold: **Bold** __Bold__

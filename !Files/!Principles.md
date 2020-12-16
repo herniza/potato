@@ -1,14 +1,12 @@
 # Principles
 
 ## Primitive Obsessions
----
 1. Primitive value misalkan bikin variabel 'double probabilityA'. Double itu kan merepresentasikan Class Probability. Nah itu harusnya diganti jadi 'Probability probabilityA' aja
 
 2. ngasih kebebasan untuk suatu variable yang nilainya harus memiliki nilai tertentu.
 contoh: Variable gender. Gender kalau dijadiin freetext itu bakalan dianggep primitive obsession, terlalu banyak nilai yang beda2. Makanya gender itu harusnya pake dropdown dengan pilihan2 tertentu.
 
 ## 4 Rules of Simple Design (!!! to !)
----
 1. Pass All Tests / It Works
 
 2. Reveals Intention / Readable
@@ -16,7 +14,6 @@ contoh: Variable gender. Gender kalau dijadiin freetext itu bakalan dianggep pri
 4. Keep it small / Fewer element
 
 ## Object Calisthenics Rules
----
 1. Only One Level Of Indentation Per Method
 
 2. Don’t Use The ELSE Keyword
@@ -41,7 +38,6 @@ contoh: Variable gender. Gender kalau dijadiin freetext itu bakalan dianggep pri
         object should not burden themself with the knowledge of other object's internal
 
 ## SOLID Principle
----
 1. Single Responsibility Principle (SRP)
     >each class should have one responsibility and one single purpose to change
 
@@ -52,7 +48,6 @@ contoh: Variable gender. Gender kalau dijadiin freetext itu bakalan dianggep pri
 5. Dependency Inversion Principle
 
 ## CQS (Command and Query Separation)
----
 > Functions that change state should not return values and functions that return values should not change state. 
 
 - Commands is the method that do the modification state of the system and return void
@@ -61,7 +56,6 @@ contoh: Variable gender. Gender kalau dijadiin freetext itu bakalan dianggep pri
 Test menggunakan side effect
 
 ## ACID
----
 1. Atomicity
     > The transaction executes completely or not at all.
 2. Consistency
@@ -72,7 +66,6 @@ Test menggunakan side effect
     > The transaction’s results will not be lost in a failure.
 
 ## API First Principle
----
 > Define APIs first, before coding its implementation
 
 ### REST Guidelines
@@ -85,5 +78,4 @@ Test menggunakan side effect
     - Versioning
 
 ## SEPARATION OF CONCERNS
----
 > is a design principle for separating a computer program into distinct sections such that each section addresses a separate concern

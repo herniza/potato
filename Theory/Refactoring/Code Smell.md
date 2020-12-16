@@ -2,7 +2,6 @@
 > Code smell is a surface indication that usually corresponds to deeper problem in the system
 
 ## Type
----
 1. Bloaters
     Code, method and classes that have increased
     - Long Method

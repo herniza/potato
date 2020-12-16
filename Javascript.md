@@ -14,7 +14,6 @@ Importance of javascript in web development
 pakai _ untuk menandakan variable ataus method tsb private
 
 ## Setup
----
 - init javascript
     ```npm init -y```
 - install babel
@@ -55,7 +54,6 @@ pakai _ untuk menandakan variable ataus method tsb private
 
 
 ## Create a javascript project
----
 - Generate npm project: ```npm init -y```
 - Babel dependencies: ```npm i -D @babel/core @babel/node @babel/preset-env```
 - Jest dependencies: ```npm install -D jest @types/jest```
@@ -84,16 +82,13 @@ pakai _ untuk menandakan variable ataus method tsb private
     ```
 
 ## Babel
----
 bantu transfile bahasa yg udah kita buat jadi bahasa yg dimengerti browser. (dari es6 ke es5)
 
 ## NPM
----
 package manager. kayak maven di java
 scripts ada di package.json
 
 ## Naming
----
 - class naming : C besar
 
 

@@ -1,18 +1,15 @@
 # Java Springboot
 
 ## Setup
----
 Run: ```mvn spring-boot:run```
 
 API Documentation: http://localhost:8081/swagger-ui.html#/
 
 ## When to Create Class
----
 1. punya properti & behaviour
 2. kalau gapunya properti & behaviour, bisa diubah jadi interface. untuk initiate nya pake Mockito atau new Vehicle(){}
 
 ## Enum
----
 > a special class that represent a group of constants (unchangeable variable like final variable)
 
 - we can use enum if we have some constant value that we are not gonna change it
@@ -29,7 +26,6 @@ API Documentation: http://localhost:8081/swagger-ui.html#/
     ```
 
 ## Equals & Hash Code
----
 ### Equals
 > Equals membandingkan atributnya. Walaupun 2 instace berasal dari class yang sama pasti akan berbeda.
 
@@ -45,20 +41,16 @@ API Documentation: http://localhost:8081/swagger-ui.html#/
 >Hash code harus diterapkan saat melakukan override equals dan kedua object harus memiliki hashcode yang sama apabila mau membandingkan object.
 
 ## Value Objects
----
 > Value object is an object whose equality is based on the value rather than identity. Value object is immutable (cant changed)
 
 ## Annotations
----
 >Annotation @BeforeEach to run common code for every test case in 1 Test File.
 
 ## Double & double
----
 > Double itu object, double itu primitive aja
 Double itu punya default value. double default valuenya 0.
 
 ## Exception
----
 > Exception should not general and exception message must be clear and has one purpose. Biar di testnya ga bingung mau errornya apa, mesti dipakein if lagi.
 * Checked
     1. Represent error outside the control of the program (Compile-Time)
@@ -74,7 +66,6 @@ Double itu punya default value. double default valuenya 0.
     3. Java does not verify unchecked exceptions at compile-time
 
 ## Collection Framework
----
 > Framework adalah suatu kumpulan dari suatu struktur data. Sebuah kerangka kerja yang menyediakan sebuah arsitektur untuk menyimpan dan memanipulasi sebuah objek.
 
 ### Benefit:
@@ -100,21 +91,17 @@ Double itu punya default value. double default valuenya 0.
 1. Cocok untuk pencarian data bukan untuk pengolahan data karena hanya punya fungsi contains() dan tidak punya get()
 
 ## GUARD CLAUSE
----
 >A guard clause is simply a check that immediately exits the function, either with a return statement or an exception
 
 kayak arraylist tapi maunya unique. jadinya dijagain pake cek contain dulu. kalau ada, baru throw error. kalau gak ada, baru add. padahal kalau bikin list mau unique bisa pake hashset. trus dia auto return false kalau mau add object yang sama ke set.
 
 ## Callback
----
 > a function that is called from another class's function.
 
 ## Marker Interface
----
 > an interface that has no methods or constants inside it.
 
 ## Garbage Collection
----
 > process of reclaiming the runtime unsused memory automatically. in other words, a way to destroy the unused objects
 
 ### How Object are Created in Java
@@ -147,32 +134,25 @@ kayak arraylist tapi maunya unique. jadinya dijagain pake cek contain dulu. kala
 1. Reuse objects insted of generating new ones
 
 ## Delegate Pattern
----
 > cuma perantara aja tapi diperlukan supaya objectnya berfungsi
 
 ## Observer
----
 > behavioural pattern that lets you define subscription mechanism to notify multiply objects
 
 ## Aggregation
----
 > private variable tapi bisa diubah2 dari class lain karena assign nya by reference. harusnya bikin new ArrayList<>(parkingLot) aja, bukan assign langsung = gitu
 
 ## Composition
----
 > ketika suatu class yang seharusnya memiliki atribut dependant dengan class tab.
 
 ## Comparator
----
 > bisa pake reverse order untuk nentuin mau asc atau desc
 
 ## Syntatic Sugar
----
 - bisa replace lambda dengan ::
     ```ParkingLot::getFreeSpace```
 
 ## Functional Programming
----
 > Style of programming where we build a program from pure function (function does nothing else and does not cause any side effect)
 
 1. Functional Interface
@@ -182,17 +162,14 @@ kayak arraylist tapi maunya unique. jadinya dijagain pake cek contain dulu. kala
 3. Streams
 
 ## Dependency Inversion
----
 
 ## Spring Bean
----
 1. Spring Inversion of Control
     > Backbond sping ioc, control beannya
 2. Dependency Injections
     > Dependency Injection (DI) is a design pattern used to implement IoC. It allows the creation of dependent objects outside of a class and provides those objects to a class through different ways. Ex: @Autowire
 
 ## Lombok
----
 1. @NoArgsConstructor : generate a constructor with no parameters
 2. @RequiredArgsConstructor : generates a constructor with 1 parameter for each field that requires special handling
 3. @AllArgsConstructor : generates a constructor with 1 parameter for each field in your class
@@ -201,7 +178,6 @@ kayak arraylist tapi maunya unique. jadinya dijagain pake cek contain dulu. kala
 .andDo(MockMvcResultHandlers.print());
 
 ## Common Design Architecture
----
 1. Presentation Layer (Controller)
 2. Business Layer (Service)
 3. Data Access Layer (Repository)
@@ -213,9 +189,7 @@ kayak arraylist tapi maunya unique. jadinya dijagain pake cek contain dulu. kala
 3. @Repository
 
 ## Data Transfer Object
----
 > DTO is a representation of request body
 
 ## SEPARATION OF CONCERNS
----
 > is a design principle for separating a computer program into distinct sections such that each section addresses a separate concern

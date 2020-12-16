@@ -4,7 +4,6 @@
 Object : Data, Variable, Function
 
 ## Advantages of OOP
----
 1. Modular
 
 2. Maintainable
@@ -12,7 +11,6 @@ Object : Data, Variable, Function
 4. Readable
 
 ## 4 Pilars of OOP
----
 - Abstraction
     > method that hide implementation (unnecessary details from user)
 
@@ -26,14 +24,12 @@ Object : Data, Variable, Function
 The most important pilars : Encapsulation
 
 ## Fixing Duplication
----
 1. Inheritance (Overload)
 
 2. Abstract Class
 3. Factory Method : a static method that returns object. 
 
 ## Naming Convention
----
 1. English
 
 2. No abbreviation
@@ -42,13 +38,11 @@ The most important pilars : Encapsulation
 5. Consistent
 
 ## Factory Method Naming Convention
----
 1. Penamaan function di awal menggunakan make / create
 
 2. makeA_shouldHaveB_whenGivenC
 
 ## Object Calisthenics
----
 > is programming exercises, formalized as a set of 9 rules.
 https://williamdurand.fr/2013/06/03/object-calisthenics/
 

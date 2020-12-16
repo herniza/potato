@@ -1,7 +1,6 @@
 # Jacoco Plugin
 
 ## Setup
----
 1. Add Plugin on pom.xml
 
 2. ```mvn clean jacoco:prepare-agent test jacoco:report```

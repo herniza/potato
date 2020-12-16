@@ -2,27 +2,23 @@
 > is a software management and comprehension tool
 
 ### Create Project
----
 ```
 mvn archetype:generate -DgroupId=com.potato.example -DartifactId=maven-exercise -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
 ```
 
 ## Maven Standard Project Structure
----
 1. Project Object Model / POM
 
 2. Source Code Application
 3. Source Code Test
 
 ## Main Feature in Maven
----
 1. Build Tools
 
 2. Dependency Management Tools
 3. Documentation Tools 
 
 ## Common Lifecycle Phases of Maven
----
 1. Clean : 
     > cleans up artifacts created by prior builds 
     

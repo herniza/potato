@@ -4,7 +4,6 @@
 ### Client Web Architecture
 User -> Browser -> Request DNS Server -> Translate domain to IP -> Hit Server -> Give Responses -> Generate Website
 
----
 
 Define language between client and server
 1. HTTP METHOD:
@@ -22,7 +21,6 @@ Define language between client and server
         >there is no link between two requests being successively carried out on the same connection. 
 
 ## WEB SERVER & APPLICATION SERVER
----
 1. Java Servlet
     >handle request yang datang dan memberikan respond
     

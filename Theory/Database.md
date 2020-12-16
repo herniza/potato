@@ -4,7 +4,6 @@ Convention Name:
 2. Char for fixed value, varchar for not fixed value
 
 ## Relational Database
----
 - Joining Table
 
 - Composite Key
@@ -34,7 +33,6 @@ Advantages:
 
 
 ## ANOMALIES
----
 1. Insertion Anomaly
     > We need insert data to another table before insert to one table. Ex: Student table has FK to Address table. So user must insert data to address table before insert to student.
 
@@ -42,7 +40,6 @@ Advantages:
 3. Update Anomaly
 
 ## Normalization
----
 Advantages:
 1. Avoid anomalies
 
@@ -81,8 +78,6 @@ Normal Forms:
     > The transaction’s results will not be lost in a failure.
 
 ## CASCADING
----
 
 ## AUDIT COLUMN
----
 > there's column created_at and updated_at to log timestamp.
