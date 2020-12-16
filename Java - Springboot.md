@@ -1,5 +1,11 @@
 # Java Springboot
 
+## Setup
+---
+Run: ```mvn spring-boot:run```
+
+API Documentation: http://localhost:8081/swagger-ui.html#/
+
 ## When to Create Class
 ---
 1. punya properti & behaviour
@@ -177,3 +183,39 @@ kayak arraylist tapi maunya unique. jadinya dijagain pake cek contain dulu. kala
 
 ## Dependency Inversion
 ---
+
+## Spring Bean
+---
+1. Spring Inversion of Control
+    > Backbond sping ioc, control beannya
+2. Dependency Injections
+    > Dependency Injection (DI) is a design pattern used to implement IoC. It allows the creation of dependent objects outside of a class and provides those objects to a class through different ways. Ex: @Autowire
+
+## Lombok
+---
+1. @NoArgsConstructor : generate a constructor with no parameters
+2. @RequiredArgsConstructor : generates a constructor with 1 parameter for each field that requires special handling
+3. @AllArgsConstructor : generates a constructor with 1 parameter for each field in your class
+4. @Getter or @Setter :  generate the default getter/setter automatically
+
+.andDo(MockMvcResultHandlers.print());
+
+## Common Design Architecture
+---
+1. Presentation Layer (Controller)
+2. Business Layer (Service)
+3. Data Access Layer (Repository)
+
+### Spring Stereotype Annotations
+@Component
+1. @Controller
+2. @Service
+3. @Repository
+
+## Data Transfer Object
+---
+> DTO is a representation of request body
+
+## SEPARATION OF CONCERNS
+---
+> is a design principle for separating a computer program into distinct sections such that each section addresses a separate concern

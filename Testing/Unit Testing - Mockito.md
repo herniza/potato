@@ -1,9 +1,4 @@
 # Unit Testing
-## Assertions
----
-1. Rounding in Assertions Using Delta
-```Assertions.assertEqual(0.08, actualResult, 0.0001)```
-
 ## Mockito
 ---
 > To test void function)
@@ -24,3 +19,7 @@
 ## @BeforeEach in Test Class
 ---
 > bisa dipake untuk init suatu variabel. biar ga redundant init variabel di tiap @Test nya
+
+## MOCK & INJECT MOCK
+---
+> syntatic sugar of Mockito. We can use @Mock to mocking class, and use @InjectMock to inject its mock to another class constructor.

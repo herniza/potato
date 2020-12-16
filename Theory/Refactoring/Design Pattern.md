@@ -56,3 +56,9 @@
     > lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
 5. Prototype
     > lets you copy existing objects without making your code dependant on their class
+
+
+## Structural
+---
+1. Facade
+    > is a structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes. It hides much of the complexity and makes the subsystem easy to use.

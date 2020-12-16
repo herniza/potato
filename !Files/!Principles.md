@@ -59,3 +59,31 @@ contoh: Variable gender. Gender kalau dijadiin freetext itu bakalan dianggep pri
 
 - Query is return a result and do not change.
 Test menggunakan side effect
+
+## ACID
+---
+1. Atomicity
+    > The transaction executes completely or not at all.
+2. Consistency
+    > The transaction preserves the internal consistency of the database.
+3. Isolation
+    > The transaction executes as if it were running alone, with no other transactions.
+4. Durability
+    > The transaction’s results will not be lost in a failure.
+
+## API First Principle
+---
+> Define APIs first, before coding its implementation
+
+### REST Guidelines
+1. Pluralize Resources Naming
+
+2. Avoid Action: Think Resource
+3. Use snake_case for Query Parameters
+4. Provide API Specification (Documentation)
+5. Don't break backward compatibility
+    - Versioning
+
+## SEPARATION OF CONCERNS
+---
+> is a design principle for separating a computer program into distinct sections such that each section addresses a separate concern
