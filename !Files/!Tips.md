@@ -56,4 +56,4 @@
 1. magic literals
 2. max loc : 15
 
-kill -9 $(lsof -t -i:3000)
+ 

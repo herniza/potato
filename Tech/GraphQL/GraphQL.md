@@ -77,7 +77,7 @@
 
     Query:
     ```
-    {
+    query HeroComparison($first: Int = 3) {
         leftComparison: hero(episode: EMPIRE) {
             ...comparisonFields
         }
@@ -85,12 +85,16 @@
             ...comparisonFields
         }
     }
-    ​
+
     fragment comparisonFields on Character {
         name
-        appearsIn
-        friends {
-            name
+        friendsConnection(first: $first) {
+            totalCount
+            edges {
+            node {
+                name
+            }
+            }
         }
     }
     ```
@@ -101,22 +105,60 @@
         "data": {
             "leftComparison": {
                 "name": "Luke Skywalker",
-                "appearsIn": [ "NEWHOPE", "EMPIRE", "JEDI" ],
-                "friends": [
-                    { "name": "Han Solo" }
-                ]
+                "friendsConnection": {
+                    "totalCount": 1,
+                    "edges": [
+                        { "node": { "name": "Han Solo" } }
+                    ]
+                }
             },
             "rightComparison": {
                 "name": "R2-D2",
-                "appearsIn": [ "NEWHOPE", "EMPIRE", "JEDI" ],
-                "friends": [
-                    { "name": "Han Solo" }
-                ]
+                "friendsConnection": {
+                    "totalCount": 1,
+                    "edges": [
+                        { "node": { "name": "Leia Organa" } }
+                    ]
+                }
             }
         }
     }
     ```
 5. Operation name
+    > The operation name is a meaningful and explicit name for your operation. Such as, (query) **HeroComparison**
+
+    Variable:
+    ```
+    {
+        "episode": "JEDI"
+    }
+    ```
+
+    Query:
+    ```
+    query HeroNameAndFriends($episode: Episode) {
+        hero(episode: $episode) {
+            name
+            friends {
+                name
+            }
+        }
+    }
+    ```
+
+    Result:
+    ```
+    {
+        "data": {
+            "hero": {
+                "name": "R2-D2",
+                "friends": [
+                    { "name": "Luke Skywalker" }
+                ]
+            }
+        }
+    }
+    ```
 6. Variables
 7. Directives
 8. Mutations
